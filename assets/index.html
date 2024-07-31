@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta 
+    name="theme-color" 
+    content="#0071bc"
+    />
     <!--INICIO CSS ICONES-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!--INICIO CSS SLIDE-->
@@ -17,7 +21,7 @@
         <!--INICIO LOGO DO SITE-->
         <a href="index.html" class="logo">
             <i class="fa fa-person-cane"></i>
-            AnaFisio
+        Ana<span>Fisioterapeuta</span>
         </a>
         <!--FIM LOGO DO SITE-->
 
@@ -29,22 +33,56 @@
             <a href="blog.html">Blog</a>
         </nav>
         <!--FIM MENU DO SITE-->
+        <div class="icons">
+            <div id="login"><i class="fa-solid fa-bars"></i></div>
+            <div id="menu"><i class="fa-solid fa-user"></i></div>
+        </div>
+
+        <!--INICIO ICONS DO SITE-->
+        <!--FIM ICONS DO SITE-->
 
     </header>
     <!--fIM CABEÇALHO DO SITE-->
 
+    <!--INICIO DESTAQUE DO SITE-->
     <section class="destaque">
         <!-- Slider main container -->
         <div class="swiper home-slider">
            
            <div class="swiper-wrapper">
    
-               <div class="swiper-slide slide" style="background: url();"></div>
+               <div class="swiper-slide slide" style="background: linear-gradient(rgba(216, 220, 223, 0.1), #072239e9), url(imagens/fotofisioterapia01.jpg) no-repeat;">
+                 <div class="content">
+                   <h3>
+                      "Promovendo <span>saúde</span> e <span>movimento</span> <br>para uma vida melhor."
+                   </h3>
+                   <a href="" class="btn">Saiba mais</a>
+                 </div>
+               </div>
+               <div class="swiper-slide slide" style="background: linear-gradient(rgba(216, 220, 223, 0.1), #072239e9), url(imagens/fotofisioterapia02.jpg) no-repeat;">
+                <div class="content">
+                  <h3>
+                    "Toda <span>Reabilitação</span> começa <br> com <span>movimento.</span>"
+                  </h3>
+                  <a href="" class="btn">Saiba mais</a>
+                </div>
+              </div>
+              <div class="swiper-slide slide" style="background: linear-gradient(rgba(216, 220, 223, 0.1), #072239e9), url(imagens/fotofisioterapia03.jpg) no-repeat;">
+                <div class="content">
+                  <h3>
+                    "Fortalecendo o <span>corpo</span>, restaurando a <span>vida</span>."
+                  </h3>
+                  <a href="" class="btn">Saiba mais</a>
+                </div>
+              </div>
                
     ...
             </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </section>
+    <!--FIM DESTAQUE DO SITE-->
 
     <!--INICIO JS DO SLIDE DO SITE-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
