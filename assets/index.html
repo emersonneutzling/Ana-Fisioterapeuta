@@ -7,10 +7,9 @@
     name="theme-color" 
     content="#0071bc"
     />
-    <!--INICIO CSS ICONES-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <!--INICIO CSS SLIDE-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/style.css">
 
     <title>Ana Fisioterapeuta</title>
@@ -19,21 +18,21 @@
     <!--INICIO CABEÇALHO DO SITE-->
     <header class="top-site">
         <!--INICIO LOGO DO SITE-->
-        <a href="index.html" class="logo">
+        <a href="index.html" class="logo" data-aos="zoom-in-right" data-aos-duration="3000">
             <i class="fa fa-person-cane"></i>
         Ana<span>Fisioterapeuta</span>
         </a>
         <!--FIM LOGO DO SITE-->
 
         <!--INICIO MENU DO SITE-->
-        <nav class="menu-site">
+        <nav class="menu-site" data-aos="fade-down" data-aos-duration="3000">
             <a href="index.html">Home</a>
             <a href="Sobre.html">Sobre</a>
             <a href="contato.html">Contato</a>
             <a href="blog.html">Blog</a>
         </nav>
         <!--FIM MENU DO SITE-->
-        <div class="icons">
+        <div class="icons" data-aos="zoom-in-left" data-aos-duration="3000">
             <div id="login"><i class="fa-solid fa-bars"></i></div>
             <div id="menu"><i class="fa-solid fa-user"></i></div>
         </div>
@@ -45,48 +44,58 @@
     <!--fIM CABEÇALHO DO SITE-->
 
     <!--INICIO DESTAQUE DO SITE-->
-    <section class="destaque">
-        <!-- Slider main container -->
-        <div class="swiper home-slider">
-           
-           <div class="swiper-wrapper">
-   
-               <div class="swiper-slide slide" style="background: linear-gradient(rgba(216, 220, 223, 0.1), #072239e9), url(imagens/fotofisioterapia01.jpg) no-repeat;">
-                 <div class="content">
-                   <h3>
-                      "Promovendo <span>saúde</span> e <span>movimento</span> <br>para uma vida melhor."
-                   </h3>
-                   <a href="" class="btn">Saiba mais</a>
-                 </div>
-               </div>
-               <div class="swiper-slide slide" style="background: linear-gradient(rgba(216, 220, 223, 0.1), #072239e9), url(imagens/fotofisioterapia02.jpg) no-repeat;">
-                <div class="content">
-                  <h3>
-                    "Toda <span>Reabilitação</span> começa <br> com <span>movimento.</span>"
-                  </h3>
-                  <a href="" class="btn">Saiba mais</a>
-                </div>
-              </div>
-              <div class="swiper-slide slide" style="background: linear-gradient(rgba(216, 220, 223, 0.1), #072239e9), url(imagens/fotofisioterapia03.jpg) no-repeat;">
-                <div class="content">
-                  <h3>
-                    "Fortalecendo o <span>corpo</span>, restaurando a <span>vida</span>."
-                  </h3>
-                  <a href="" class="btn">Saiba mais</a>
-                </div>
-              </div>
-               
-    ...
-            </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-    </section>
+    <div class="wrapper">
+      <main>
+        <section class="module parallax parallax-1">
+          
+          <a class="btn" data-aos="zoom-in" data-aos-duration="3000" href="#" target="_blank">Agendar Horário</a>
+          
+        </section>
+
+        <section class="module content">
+          <div class="container" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="3000">
+            <h2>"Sua jornada para uma vida <br> mais ativa e saudável começa aqui."</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere culpa accusamus ex eius at repudiandae quae, suscipit nisi sint id porro quis ut nobis, aliquid alias delectus deleniti unde minima enim ipsam perspiciatis qui eveniet! Eaque fuga neque sequi obcaecati.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga porro facilis vel nisi fugit. Dicta nulla, laudantium perferendis perspiciatis est consectetur dolores rem debitis aperiam autem dolore tenetur cumque nihil.</p>
+          </div>
+        </section>
+
+        <section class="module parallax parallax-2">
+          <h1></h1>
+        </section>
+
+        <section class="module content">
+          <div class="container" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="3000">
+            <h2>Oferecemos reabilitação personalizada para restaurar sua força, mobilidade e qualidade de vida.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere culpa accusamus ex eius at repudiandae quae, suscipit nisi sint id porro quis ut nobis, aliquid alias delectus deleniti unde minima enim ipsam perspiciatis qui eveniet! Eaque fuga neque sequi obcaecati.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga porro facilis vel nisi fugit. Dicta nulla, laudantium perferendis perspiciatis est consectetur dolores rem debitis aperiam autem dolore tenetur cumque nihil.</p>
+          </div>
+        </section>
+
+        <section class="module parallax parallax-3">
+          <h1></h1>
+        </section>
+
+        <section class="module content">
+          <div class="container" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="3000">>
+            <h2>Especialista em fisioterapia para idosos, cuidamos da sua mobilidade e equilíbrio com tratamentos personalizados, para que você possa desfrutar de uma vida ativa e independente.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere culpa accusamus ex eius at repudiandae quae, suscipit nisi sint id porro quis ut nobis, aliquid alias delectus deleniti unde minima enim ipsam perspiciatis qui eveniet! Eaque fuga neque sequi obcaecati.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga porro facilis vel nisi fugit. Dicta nulla, laudantium perferendis perspiciatis est consectetur dolores rem debitis aperiam autem dolore tenetur cumque nihil.</p>
+          </div>
+        </section>
+      </main>
+
+    </div>
+    
     <!--FIM DESTAQUE DO SITE-->
 
-    <!--INICIO JS DO SLIDE DO SITE-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <!--FIM JS DO SLIDE DO SITE-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/assets/js/script.js"></script>
 </body>
 </html>
