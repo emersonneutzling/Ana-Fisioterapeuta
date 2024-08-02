@@ -145,22 +145,35 @@ section.module.parallax:after{
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
 }
 
-section.module.parallax a.btn{
-    width: 250px;
-    margin: auto;
-    padding: 14px 28px;
-    color: #fff;
-    background-color: #0071bc;
-    border: 0;
-    border-radius: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
+section.module.parallax .text-gradient{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     
 }
 
 
+section.module.parallax .text-gradient h1{
+    text-transform: uppercase;
+    color: transparent;
+    background: linear-gradient(to right, #ff00, #0071bc, #242424,  #db9797,  #676666, #000 );
+    background-clip: text;
+    background-size: 1000%;
+    animation: cores 10s linear infinite;
+}
+
+@keyframes cores{
+    0%{
+        background-position: 0 100%;
+    }
+    50%{
+        background-position: 100% 0;
+    }
+    100%{
+        background-position: 0 100%;
+    }
+}
 
 section.module.parallax-1{
     background-image: url(/assets/imagens/fotofisioterapia01.jpg);
@@ -182,10 +195,71 @@ section.module.parallax h1{
     text-transform: uppercase;
 }
 
+.btn-whatsapp{
+    position: fixed;
+    bottom: 14px;
+    right: 24px;
+    z-index: 99;
+}
 
+.btn-whatsapp img{
+    max-width: 74px;
+    transition: transform 0.4s;
+}
 
+.btn-whatsapp img:hover{
+    transform: scale(1.1);
+}
 
+.btn-whatsapp .tooltip-text{
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    top: 8px;
+    left: -144px;
+    background-color: #0071bc;
+    color: #fff;
+    text-align: center;
+    padding: 6px;
+    border-radius: 8px;
+    font-weight: 500;
+    opacity: 0;
+    transition: opacity 1s;
+}
 
+.btn-whatsapp:hover .tooltip-text{
+    visibility: visible;
+    opacity: 1;
+    
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 0;
+    gap: 24px;
+    background-color: #676666;
+    border-top: 1px solid #6766666d;
+}
+
+.footer-icons{
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    
+}
+
+.footer-icons i{
+    color: #fff;
+}
+
+footer p{
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
 
 
 
@@ -198,7 +272,7 @@ section.module.parallax h1{
         
     }
     .top-site .logo span{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .top-site .menu-site{
@@ -220,5 +294,28 @@ section.module.parallax h1{
         font-size: 11px;
         padding: 15px 10px;
         
+    }
+
+    section.module.content h2{
+        font-size: 18px;
+    }
+
+    .btn-whatsapp{
+        bottom: 18px;
+        right: 12px;
+    }
+
+    .btn-whatsapp img{
+        max-width: 64px;
+    }
+
+    .btn-whatsapp .tooltip-text{
+        width: 120px;
+        top: 2px;
+        left: -125px;
+    }
+
+    section.module.parallax .text-gradient h1{
+        font-size: 24px;
     }
 }
